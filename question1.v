@@ -1,4 +1,4 @@
-module top_module(input a,
+module add1(input a,
 input b,
 input c_in,
 output c_out,
