@@ -4,5 +4,6 @@ input c_in,
 output c_out,
 output sum
 );
-assign {c_out,sum}=a+b+c_in;
+  assign sum=(a^b)^c_in;
+  assign c_out=(a&b)|(b&c_in)|(c_in&a);
 endmodule
