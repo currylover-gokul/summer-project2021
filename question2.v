@@ -33,7 +33,7 @@ wire [7:0] sum;
 wire c_out;
 add8 inst(.a(a),.b(b),.c_in(c_in),.sum(sum),.c_out(c_out));
 initial begin
-  $display($time,"\t\ta\t\tb\t\tc_in\tsum\tc_out");
+  $display($time,"\ta\tb\tc_in\tsum\tc_out");
    a=8'd0;  b=8'd0;  c_in=1'b0;
 #1 a=8'd1;  b=8'd1;  c_in=1'b0;
 #1 a=8'd1;  b=8'd0;  c_in=1'b0;
