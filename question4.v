@@ -53,7 +53,7 @@ reg [7:0] b;
 wire less,equal,greater;
 compare8 inst(.a(a),.b(b),.less(less),.greater(greater),.equal(equal));
 initial begin
-    $display($time,"\t\ta\t\tb\tless\tgrater\tequal");
+    $display($time,"\t\ta\t\tb\tless\tgreater\tequal");
    a=8'b00000001;  b=8'b00000000;  
 #1 a=8'b00000110;  b=8'b00010001;  
 #1 a=8'b00000011;  b=8'b00000110;  
