@@ -1,0 +1,30 @@
+Soln:-
+
+Converted the .txt file into an audio file.
+Then, after listening to the distinct beeps, our hunch was that the above is a morse code.
+
+Following is what we heard:-
+
+------ - ------- - : C
+------ ------ ------ : O
+- ------ - - : L
+- ------ - - : L
+- :E
+------ ------ -:G
+- : E
+
+------ - :N
+- ------ : A
+- - - - :H
+- - :I
+
+------ - ------ :K
+- - - - :H
+- - ------ :U
+- ------ - - :L
+- :E
+------ ------ - :G
+- ------ :A
+
+The message we recieved was COLLEGE NAHI KHULEGA.
+
