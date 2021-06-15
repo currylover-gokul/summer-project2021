@@ -94,13 +94,13 @@ endmodule
 module testbench;
     reg[7:0]A;
     reg [5:0]B;
-    wire [7:0] g;
+    wire [7:0] c;
     top_module testbench(A,B,g);
     initial begin
         A=8'b00101010;B=6'b101010;
-        #1 $display ("Plaintext=%b ,Key=%b ,Cipher=%b",A,B,g);
+	    #1 $display ("Plaintext=%b ,Key=%b ,Cipher=%b",A,B,c);
         A=8'b10101001;B=6'b101010;
-        #1 $display ("Plaintext=%b ,Key=%b ,Cipher=%b",A,B,g);
+	    #1 $display ("Plaintext=%b ,Key=%b ,Cipher=%b",A,B,c);
         $stop;
     end
 endmodule
