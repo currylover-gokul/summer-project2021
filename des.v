@@ -21,8 +21,10 @@ module permute(input [3:0]a,output [3:0]b);
     assign b[3]=a[1];
 endmodule
 module s_box(input[5:0]a,output reg [3:0]b);
+wire [6:1]a1;
+assign a1={a[6],a[1],a[5:2]};
     always @(*)begin
-        case(a)
+	    case(a1)
 6'b000000:  b <= 4'd14;             
 	 6'b000001:  b <= 4'd4;             
 	 6'b000010:  b <= 4'd13;            
